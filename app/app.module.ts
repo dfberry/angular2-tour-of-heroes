@@ -9,8 +9,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 import './rxjs-extensions';
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routedComponents } from './app-routing.module';
-import { HeroService } from './hero.service';
-import { HeroSearchComponent } from './hero-search.component';
+import { HeroService, HeroSearchComponent } from './hero/index';
 
 @NgModule({
   imports: [
