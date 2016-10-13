@@ -38,7 +38,7 @@ System.config({
     'angular-in-memory-web-api': { main: './index.js', defaultExtension: 'js' },
 
     // barrels
-    // 'app/core':   { main: 'index'},
-    // 'app/models': { main: 'index'},
+    //'app/hero':   { main: 'index'},
+    //'app/dashboard': { main: 'index'},
   }
 });
