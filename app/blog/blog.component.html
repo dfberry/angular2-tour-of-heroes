@@ -1,0 +1,11 @@
+<h2>My Blogs</h2>
+<ul class="heroes">
+  <li *ngFor="let blog of blogs" >
+
+    <span class="hero-element">
+      <span class="badge">{{blog.id}}</span> {{blog.name}}
+    </span>
+
+<span>{{ blog.url}}</span>
+  </li>
+</ul>

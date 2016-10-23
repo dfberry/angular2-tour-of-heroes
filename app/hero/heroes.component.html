@@ -1,10 +1,12 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+
     <span class="hero-element">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </span>
-    <button class="delete-button" (click)="deleteHero(hero, $event)">Delete</button>
+<button class="delete-button" (click)="deleteHero(hero, $event)">Delete</button>
+<span>{{ hero.url}}</span>
   </li>
 </ul>
 
@@ -16,7 +18,8 @@
 
 <div *ngIf="selectedHero">
   <h2>
-    {{selectedHero.name | uppercase}} is my hero
+    {{selectedHero.name | uppercase}} is my hero<br>
+    {{selectedHero.url}}
   </h2>
   <button (click)="gotoDetail()">View Details</button>
 </div>

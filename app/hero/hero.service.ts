@@ -12,6 +12,7 @@ export class HeroService {
   constructor(private http: Http) { }
 
   getHeroes(): Promise<Hero[]> {
+    console.log("herosUrl = " + this.heroesUrl);
     return this.http
       .get(this.heroesUrl)
       .toPromise()
