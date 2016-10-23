@@ -14,16 +14,18 @@ export class BlogService {
   }
 
   getBlogs(){
+    /*
     return this.http
       .get(blogsUrl)
-.map((response: Response) => response.json())
-      .catch(this._handleErrorObservable);
+      .map((response: Response) => response.json())
+      .catch(this._handleErrorObservable);*/
   }
-
+/*
     _handleErrorObservable(err:any){
         console.log(err); //log this
         //throw(err);
         return Observable.of(err); // pass back for ux
     }
+    */
 
 }
